@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damar Signup</title>
+  <link rel="stylesheet" href="/signup">
+  <style>
+    /* Additional styles for spacing */
+    #loginButton {
+      margin-top: 20px;
+      /* Add spacing above the Login button */
+    }
+
+    .account-option {
+      text-align: center;
+      margin: 15px 0;
+      /* Spacing around the account option */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <h1>DAMAR</h1>
+    <p>Your gateway to renting properties!</p>
+  </header>
+
+  <div class="container">
+    <h2>Signup for Damar</h2>
+    <form action="/submit-form" method="post"></form>
+    <input type="text" name="FirstName" placeholder="First Name" required>
+    <input type="text" name="LastName" placeholder="Last Name" required>
+    <input type="tel" name="PhoneNumber" placeholder="Phone Number" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <div>
+      <input type="Password" name="Password" placeholder="Password">
+    </div>
+    <div>
+      <input type="Password" name="Password_Confirm" placeholder="Password Confirmation">
+    </div>
+
+    <button type="submit">Sign Up</button>
+    <div class="role-selection">
+      <label>
+        <input type="radio" name="role" value="customer" required>
+        Customer
+      </label>
+      <label>
+        <input type="radio" name="role" UserType="landlord" required>
+        Landlord
+      </label>
+    </div>

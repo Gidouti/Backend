@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damar Login</title>
+  <link rel="stylesheet" href="signup.css">
+  <style>
+    /* Additional styles for spacing */
+    #signupButton {
+      margin-top: 20px;
+    }
+
+    .account-option {
+      text-align: center;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DAMAR</h1>
+    <p>Your gateway to renting properties!</p>
+  </header>
+
+  <div class="container">
+    <h2>Login to Damar</h2>
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="account-option">
+      <p>Don't have an account?</p>
+    </div>
+    <button onclick="location.href='/register'">Sign Up</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Damar. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

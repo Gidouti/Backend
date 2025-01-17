@@ -1,0 +1,97 @@
+Here’s the modified `signup.css` code to ensure that the First Name, Last Name, Phone Number, and Email fields start on a new line, with each box separated. The styles for the buttons (Login and Sign Up) will remain unchanged.
+
+```css
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #35424a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Container Styles */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 30px auto;
+    flex: 1; 
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Ensures each input starts on a new line with spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Role Selection Styles */
+.role-selection {
+    margin: 10px 0;
+}
+
+.role-selection label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #35424a;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #35424a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

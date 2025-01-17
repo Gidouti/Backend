@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAMAR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=material+icons">
+
+    <style>
+      
+        body {
+            background-image: url("pic.jpg");
+            background-size: cover;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+        }
+        li {
+            float: left;
+            position: relative;
+        }
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+            color: white;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HOME PAGE</h1>
+
+<ul>
+    <li><a href="landing page 2.4.html">Add Property</a></li>
+    <li><a href="landing page 2.5.html">View Property</a></li>
+    <li><a href="landing page 2.6.html">Contact Us</a></li>
+    <li><a href="landing page 2.7.html">About</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)">Language</a>
+        <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">French</a>
+        </div>
+    </li>
+</ul>
+
+<div class="search-container">
+    <input type="text" placeholder="Search by city, type, price...">
+    <button>Search</button>
+</div>
+
+<div class="button-container">
+    <button onclick="location.href='signup.html'">Sign Up</button>
+    <button onclick="location.href='login.html'">Login</button>
+</div>
+
+</body>
+</html>
